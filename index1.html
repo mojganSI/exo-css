@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style1.css" />
+    <title>Expense Tracker</title>
+  </head>
+  <body>
+    <h1 class="title">Expense Tracker</h1>
+    <div class="input-container">
+      <input type="text" id="expenseName" placeholder="Expense Name" />
+      <input type="number" id="expenseAmount" placeholder="Expense Amount" />
+      <input type="date" id="expenseDate" />
+      <button id="addExpense">Add Expense</button>
+    </div>
+    <div class="sorting-buttons">
+      <button id="sortDateAsc">Sort by Date (Asc)</button>
+      <button id="sortDateDesc">Sort by Date (Desc)</button>
+      <button id="sortAmountAsc">Sort by Amount (Asc)</button>
+      <button id="sortAmountDesc">Sort by Amount (Desc)</button>
+      <button id="sortNameAsc">Sort by Name (Asc)</button>
+      <button id="sortNameDesc">Sort by Name (Desc)</button>
+    </div>
+    <div id="expenses">
+      <div class="expense">
+        <strong>iphone 13</strong>
+        <span>- $10.00 (2023-08-15)</span>
+        <button class="delete-button" data-id="1">Delete</button>
+      </div>
+    </div>
+    <div id="totalExpense">Total Expense: $0</div>
+    <script src="script.js"></script>
+  </body>
+</html>
+
+
+
